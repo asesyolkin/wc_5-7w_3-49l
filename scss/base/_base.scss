@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Manrope:300,regular,700,800);
+
+html {
+  scroll-behavior: smooth; /* плавная прокрутка страницы */
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  color: #000;
+}
+
+a {
+  color: #00AE6C;
+  text-decoration: underline;
+}
+
+a:focus,
+button:focus {
+  outline-offset: 1px;
+  outline: #005fcc auto 1px;
+}
