@@ -15,3 +15,39 @@ a.btn-dark {
     background-color: #333;
   }
 }
+
+.btn-green, 
+a.btn-green {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 80px;
+  background-color: #00AE6C;
+
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+
+  transition: background-color 0.2s ease-in;
+
+  &:hover {
+    background-color: #00d875;
+  }
+}
+.btn-outline, 
+a.btn-outline {
+  display: inline-block;
+  padding: 9px 20px;
+  border-radius: 80px;
+  border: 1px solid #fff;
+
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+
+  &:hover {
+    color: #000;
+    background-color: #fff;
+  }
+}

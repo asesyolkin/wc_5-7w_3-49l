@@ -178,6 +178,39 @@ a.btn-dark:hover {
   background-color: #333;
 }
 
+.btn-green,
+a.btn-green {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 80px;
+  background-color: #00AE6C;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  transition: background-color 0.2s ease-in;
+}
+.btn-green:hover,
+a.btn-green:hover {
+  background-color: #00d875;
+}
+
+.btn-outline,
+a.btn-outline {
+  display: inline-block;
+  padding: 9px 20px;
+  border-radius: 80px;
+  border: 1px solid #fff;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+.btn-outline:hover,
+a.btn-outline:hover {
+  color: #000;
+  background-color: #fff;
+}
+
 .promo__wrapper {
   display: flex;
   justify-content: center;
@@ -224,4 +257,5 @@ a.btn-dark:hover {
   display: flex;
   -moz-column-gap: 20px;
        column-gap: 20px;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */
