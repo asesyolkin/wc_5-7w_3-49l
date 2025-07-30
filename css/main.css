@@ -132,6 +132,8 @@ button:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 
 .header__logo {
@@ -154,4 +156,20 @@ button:focus {
 }
 .nav__link:hover {
   color: #00AE6C;
+}
+
+.btn-dark,
+a.btn-dark {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 80px;
+  background-color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  transition: background-color 0.2s ease-in;
+}
+.btn-dark:hover,
+a.btn-dark:hover {
+  background-color: #333;
 }/*# sourceMappingURL=main.css.map */
