@@ -1,0 +1,28 @@
+.promo {
+}
+
+.promo__wrapper {
+  height: 600px;
+
+  background-color: #000; // временный фон для момента загрузки картинки
+  border-radius: 40px;
+  background-image: 
+    linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
+    url('./../img/promo/promo-bg.jpg'); // важен порядок значений - сначала градиент, потом картинка
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: 
+      linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
+      url('./../img/promo/promo-bg@2x.jpg');
+  }
+}
+.promo__content {
+}
+.promo__title {
+}
+.promo__text {
+}
+.promo__btns {
+}

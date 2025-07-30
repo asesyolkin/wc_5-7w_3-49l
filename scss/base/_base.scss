@@ -26,4 +26,9 @@ button:focus {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+
+  &--large {
+    max-width: 1510px;
+    width: 100%;
+  }
 }

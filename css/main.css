@@ -123,6 +123,10 @@ button:focus {
   padding: 0 15px;
   margin: 0 auto;
 }
+.container--large {
+  max-width: 1510px;
+  width: 100%;
+}
 
 .header {
   padding: 40px 0;
@@ -172,4 +176,18 @@ a.btn-dark {
 .btn-dark:hover,
 a.btn-dark:hover {
   background-color: #333;
+}
+
+.promo__wrapper {
+  height: 600px;
+  background-color: #000;
+  border-radius: 40px;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("./../img/promo/promo-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-resolution: 192dpi) {
+  .promo__wrapper {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("./../img/promo/promo-bg@2x.jpg");
+  }
 }/*# sourceMappingURL=main.css.map */
