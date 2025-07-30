@@ -179,15 +179,49 @@ a.btn-dark:hover {
 }
 
 .promo__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 600px;
+  padding: 30px;
   background-color: #000;
   border-radius: 40px;
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("./../img/promo/promo-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  color: #fff;
+  text-align: center;
 }
 @media (min-resolution: 192dpi) {
   .promo__wrapper {
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("./../img/promo/promo-bg@2x.jpg");
   }
+}
+
+.promo__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+  max-width: 678px;
+}
+
+.promo__title {
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.promo__text {
+  font-size: 18px;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+}
+
+.promo__btns {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }/*# sourceMappingURL=main.css.map */
