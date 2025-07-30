@@ -1,0 +1,36 @@
+.benefits {
+}
+
+.benefits__row {
+  display: flex;
+  column-gap: 30px;
+}
+
+.benefits__img {
+  flex: 1;
+
+  text-align: center;
+}
+
+.benefits__desc {
+  flex: 1;
+}
+
+.benefits__title {
+  margin-bottom: 10px;
+
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.benefits_text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 1.5;
+  color: #2F2F2F;
+}
