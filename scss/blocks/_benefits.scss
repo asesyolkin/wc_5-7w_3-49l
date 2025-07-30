@@ -34,3 +34,11 @@
   line-height: 1.5;
   color: #2F2F2F;
 }
+
+.benefints__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.benefits__item {
+}

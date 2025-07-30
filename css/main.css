@@ -296,4 +296,37 @@ a.btn-outline:hover {
   font-size: 14px;
   line-height: 1.5;
   color: #2F2F2F;
+}
+
+.benefints__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.benefit {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  align-items: flex-start;
+}
+
+.benefit__img {
+  flex-shrink: 0;
+}
+
+.benefit__desc {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #2F2F2F;
+}
+
+.benefit__title {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1;
+  color: #000;
 }/*# sourceMappingURL=main.css.map */
