@@ -366,4 +366,15 @@ a.btn-outline:hover {
 
 .slider__img {
   border-radius: 8px;
+}
+
+.services__title {
+  max-width: 570px;
+  margin-bottom: 40px;
+}
+
+.services__list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px 30px;
 }/*# sourceMappingURL=main.css.map */
