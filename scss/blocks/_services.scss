@@ -9,5 +9,10 @@
 .services__list {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 40px 30px;
+}
+
+.services__list-item {
+  max-width: 270px;
 }

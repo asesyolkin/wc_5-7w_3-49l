@@ -376,5 +376,28 @@ a.btn-outline:hover {
 .services__list {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 40px 30px;
+}
+
+.services__list-item {
+  max-width: 270px;
+}
+
+.service {
+  color: #2F2F2F;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.service__icon {
+  margin-bottom: 20px;
+}
+
+.service__title {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1;
+  color: #000;
 }/*# sourceMappingURL=main.css.map */
