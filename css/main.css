@@ -400,4 +400,23 @@ a.btn-outline:hover {
   font-weight: 800;
   line-height: 1;
   color: #000;
+}
+
+.price {
+  padding: 60px 0 120px;
+  background-color: #F6F6F6;
+}
+
+.price__title {
+  margin-bottom: 40px;
+}
+
+.price__cards {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  align-items: flex-start;
+}
+.price__cards > * {
+  flex: 1;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,18 @@
+.price {
+  padding: 60px 0 120px;
+  background-color: #F6F6F6;
+}
+
+.price__title {
+  margin-bottom: 40px;
+}
+
+.price__cards {
+  display: flex;
+  column-gap: 30px;
+  align-items: flex-start;
+
+  & > * {
+    flex: 1;
+  }
+}
