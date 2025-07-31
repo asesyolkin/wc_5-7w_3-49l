@@ -105,6 +105,7 @@ body {
   font-size: 16px;
   letter-spacing: 0.3px;
   color: #000;
+  padding-bottom: 600px;
 }
 
 a {
@@ -132,6 +133,13 @@ button:focus {
   display: flex;
   flex-direction: column;
   row-gap: 120px;
+}
+
+.title-section {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #000;
 }
 
 .header {
@@ -329,4 +337,22 @@ a.btn-outline:hover {
   font-weight: 800;
   line-height: 1;
   color: #000;
+}
+
+.locations__row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  align-items: flex-start;
+}
+
+.locations__title {
+  max-width: 430px;
+}
+
+.locations__controls {
+  display: flex;
+  gap: 20px;
 }/*# sourceMappingURL=main.css.map */

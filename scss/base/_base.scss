@@ -9,6 +9,7 @@ body {
   font-size: 16px;
   letter-spacing: 0.3px;
   color: #000;
+  padding-bottom: 600px; // left for development time
 }
 
 a {
@@ -37,4 +38,11 @@ button:focus {
   display: flex;
   flex-direction: column;
   row-gap: 120px;
+}
+
+.title-section {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #000;
 }
