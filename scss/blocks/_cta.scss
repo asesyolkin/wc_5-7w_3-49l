@@ -1,0 +1,61 @@
+.cta {
+}
+
+.cta__wrapper {
+  height: 400px;
+  padding: 30px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #000; // временный фон для момента загрузки картинки
+  border-radius: 40px;
+  background-image: 
+    linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
+    url('./../img/cta/cta-bg.jpg'); // важен порядок значений - сначала градиент, потом картинка
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: #fff;
+  text-align: center;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: 
+      linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
+      url('./../img/cta/cta-bg@2x.jpg');
+  }
+}
+
+.cta__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 25px;
+
+  text-align: center;
+}
+
+.cta__title {
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 1;
+  color: #fff;
+}
+
+.cta__text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1;
+  color: #fff;
+}
+
+.cta__btns {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
