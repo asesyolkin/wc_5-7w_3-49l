@@ -419,4 +419,19 @@ a.btn-outline:hover {
 }
 .price__cards > * {
   flex: 1;
+}
+
+.card {
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.card__img {
+  border-radius: 20px;
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.05);
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 37/18;
 }/*# sourceMappingURL=main.css.map */

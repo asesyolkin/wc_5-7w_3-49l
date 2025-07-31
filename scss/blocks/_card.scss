@@ -1,6 +1,17 @@
 .card {
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
 }
+
 .card__img {
+  border-radius: 20px;
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.05);
+
+  // ниже стили для того, чтбы можно было загрузить любую картинку не подготавливая предварительно её размер, пропорцию
+  object-fit: cover; // чтобы картинка правильно распологалась
+  aspect-ratio: 37 / 18; // чтобы картинка всегда была нужной формы
 }
 .card__body {
 }
