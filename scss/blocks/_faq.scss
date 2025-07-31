@@ -1,0 +1,18 @@
+.faq {
+}
+
+.faq__wrapper {
+  display: flex;
+  column-gap: 30px;
+  justify-content: space-between;
+}
+
+.faq__title {
+  width: 470px;
+  flex-shrink: 0;
+}
+
+.faq__topics {
+  width: 670px;
+  flex-shrink: 0;
+}

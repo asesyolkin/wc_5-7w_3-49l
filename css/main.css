@@ -594,4 +594,21 @@ a.btn-outline:hover {
 
 .map__img {
   border-radius: 40px;
+}
+
+.faq__wrapper {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  justify-content: space-between;
+}
+
+.faq__title {
+  width: 470px;
+  flex-shrink: 0;
+}
+
+.faq__topics {
+  width: 670px;
+  flex-shrink: 0;
 }/*# sourceMappingURL=main.css.map */
