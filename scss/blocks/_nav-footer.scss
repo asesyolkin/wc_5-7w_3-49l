@@ -1,0 +1,16 @@
+.nav-footer {
+  display: flex;
+  column-gap: 40px;
+  align-items: center;
+}
+
+.nav-footer__item {
+}
+
+a.nav-footer__link {
+  transition: color 0.2s ease-in;
+}
+
+a.nav-footer__link:hover {
+  color: #00AE6C;
+}
