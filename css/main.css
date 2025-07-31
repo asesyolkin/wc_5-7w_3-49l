@@ -355,4 +355,15 @@ a.btn-outline:hover {
 .locations__controls {
   display: flex;
   gap: 20px;
+}
+
+.slider {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  overflow: hidden;
+}
+
+.slider__img {
+  border-radius: 8px;
 }/*# sourceMappingURL=main.css.map */
