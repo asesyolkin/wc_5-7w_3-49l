@@ -1,0 +1,38 @@
+.topic {
+  padding: 30px;
+  border-top: 1px solid #ECECF1;
+  border-bottom: 1px solid #ECECF1;
+}
+
+.topic + .topic {
+  margin-top: -1px;
+}
+
+.topic__btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.topic__title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+}
+
+.topic__content {
+  padding-top: 30px;
+  
+  display: none;
+  flex-direction: column;
+  row-gap: 1em;
+
+  line-height: 1.5;
+}
+
+.topic__content--open {
+  display: flex;
+}
