@@ -69,3 +69,41 @@ a.btn-outline {
     background-color: #000;
   }
 }
+
+.btn-tg, a.btn-tg {
+  display: inline-flex; // чтобы размер кнопки был по контенту, но также были доступны свойства флекс-контейнера
+  column-gap: 10px;
+
+  padding: 10px 20px;
+  border-radius: 80px;
+  background-color: #039BE5;
+
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+
+  transition: background-color 0.2s ease-in;
+
+  &:hover {
+    background-color: #1ab3ff;
+  }
+}
+
+.btn-whatsapp, a.btn-whatsapp {
+  display: inline-flex; // чтобы размер кнопки был по контенту, но также были доступны свойства флекс-контейнера
+  column-gap: 10px;
+
+  padding: 10px 20px;
+  border-radius: 80px;
+  background-color: #00AE6C;
+
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+
+  transition: background-color 0.2s ease-in;
+
+  &:hover {
+    background-color: #00db87;
+  }
+}

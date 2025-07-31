@@ -240,6 +240,38 @@ a.btn-outline:hover {
   background-color: #000;
 }
 
+.btn-tg, a.btn-tg {
+  display: inline-flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  padding: 10px 20px;
+  border-radius: 80px;
+  background-color: #039BE5;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  transition: background-color 0.2s ease-in;
+}
+.btn-tg:hover, a.btn-tg:hover {
+  background-color: #1ab3ff;
+}
+
+.btn-whatsapp, a.btn-whatsapp {
+  display: inline-flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  padding: 10px 20px;
+  border-radius: 80px;
+  background-color: #00AE6C;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  transition: background-color 0.2s ease-in;
+}
+.btn-whatsapp:hover, a.btn-whatsapp:hover {
+  background-color: #00db87;
+}
+
 .promo__wrapper {
   display: flex;
   justify-content: center;
