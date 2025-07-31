@@ -225,6 +225,21 @@ a.btn-outline:hover {
   background-color: #fff;
 }
 
+.btn-price, a.btn-price {
+  display: inline-block;
+  padding: 9px 20px;
+  border-radius: 80px;
+  border: 1px solid #000;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+.btn-price:hover, a.btn-price:hover {
+  color: #fff;
+  background-color: #000;
+}
+
 .promo__wrapper {
   display: flex;
   justify-content: center;
@@ -415,7 +430,7 @@ a.btn-outline:hover {
   display: flex;
   -moz-column-gap: 30px;
        column-gap: 30px;
-  align-items: flex-start;
+  align-items: stretch;
 }
 .price__cards > * {
   flex: 1;
@@ -434,4 +449,49 @@ a.btn-outline:hover {
   -o-object-fit: cover;
      object-fit: cover;
   aspect-ratio: 37/18;
+}
+
+.card__body {
+  flex-grow: 1;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.05);
+  background: #fff;
+}
+
+.card__title {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #000;
+}
+
+.card__price {
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #00ae6c;
+}
+
+.card__list {
+  margin-bottom: 25px;
+  padding-left: 22px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.card__list-item {
+  list-style: disc;
+}
+
+.card__btn {
+  margin-top: auto;
 }/*# sourceMappingURL=main.css.map */

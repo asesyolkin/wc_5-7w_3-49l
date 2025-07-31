@@ -10,7 +10,7 @@
 .price__cards {
   display: flex;
   column-gap: 30px;
-  align-items: flex-start;
+  align-items: stretch;
 
   & > * {
     flex: 1;

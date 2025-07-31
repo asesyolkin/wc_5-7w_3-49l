@@ -13,15 +13,52 @@
   object-fit: cover; // чтобы картинка правильно распологалась
   aspect-ratio: 37 / 18; // чтобы картинка всегда была нужной формы
 }
+
 .card__body {
+  flex-grow: 1;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  
+  border-radius: 20px;
+  box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.05);
+  background: #fff;
 }
+
 .card__title {
+  margin-bottom: 5px;
+
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #000;
 }
+
 .card__price {
+  margin-bottom: 25px;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #00ae6c;
 }
+
 .card__list {
+  margin-bottom: 25px;
+  padding-left: 22px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
 }
+
 .card__list-item {
+  list-style: disc;
 }
-.btn-price {
+
+.card__btn {
+  margin-top: auto;
 }
