@@ -41,6 +41,10 @@
   font-weight: 400;
   line-height: 1.2;
   color: #00ae6c;
+
+  & span {
+    font-size: 14px;
+  }
 }
 
 .card__list {

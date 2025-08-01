@@ -8,22 +8,10 @@
   height: 600px;
   padding: 30px;
 
-  background-color: #000; // временный фон для момента загрузки картинки
   border-radius: 40px;
-  background-image: 
-    linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
-    url('./../img/promo/promo-bg.jpg'); // важен порядок значений - сначала градиент, потом картинка
-  background-repeat: no-repeat;
-  background-size: cover;
 
   color: #fff;
   text-align: center;
-
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: 
-      linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
-      url('./../img/promo/promo-bg@2x.jpg');
-  }
 }
 
 .promo__content {
@@ -32,6 +20,22 @@
   align-items: center;
   row-gap: 40px;
   max-width: 678px;
+}
+
+.promo__wrapper,
+.promo__content {
+  background-color: #000; // временный фон для момента загрузки картинки
+  background-image: 
+    linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
+    url('./../img/promo/promo-bg.jpg'); // важен порядок значений - сначала градиент, потом картинка
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: 
+      linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
+      url('./../img/promo/promo-bg@2x.jpg');
+  }
 }
 
 .promo__title {

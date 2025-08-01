@@ -62,9 +62,10 @@ img, svg {
 
 input, textarea, button, select {
 	font-family: inherit;
-    font-size: inherit;
-    color: inherit;
-    background-color: transparent;
+	font-size: inherit;
+	color: inherit;
+	background-color: transparent;
+	letter-spacing: inherit;
 }
 
 input::-ms-clear {
