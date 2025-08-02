@@ -31,6 +31,14 @@ button:focus {
     max-width: 1510px;
     width: 100%;
   }
+
+  @media (max-width: 1220px) { // с учётом браузерного скролла (~20px), чтобы он не появлялся, если разрешение экрана пользователя находится впритык к max-width
+    width: 768px; // 738 под контент, 30 под падинги по бокам
+  }
+
+  @media (max-width: 788px) { // здесь тоже с учётом возможного скролла
+    width: 360px; // 330 под контент, 30 под падинги по бокам
+  }
 }
 
 .main {
@@ -46,4 +54,8 @@ button:focus {
   font-weight: 800;
   line-height: 1.2;
   color: #000;
+}
+
+.none {
+  display: none !important;
 }
