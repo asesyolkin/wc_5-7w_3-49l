@@ -138,6 +138,11 @@ button:focus {
     width: 360px;
   }
 }
+@media (max-width: 788px) {
+  .container--mobile-fluid {
+    width: auto;
+  }
+}
 
 .main {
   display: flex;
@@ -157,6 +162,12 @@ button:focus {
   display: none !important;
 }
 
+@media (max-width: 1220px) {
+  .visible-desktop {
+    display: none;
+  }
+}
+
 .header {
   padding: 40px 0;
 }
@@ -173,14 +184,36 @@ button:focus {
   flex-shrink: 0;
 }
 
+@media (max-width: 788px) {
+  .header__nav {
+    display: none;
+  }
+}
+
+.header__nav-btn {
+  display: none;
+}
+@media (max-width: 788px) {
+  .header__nav-btn {
+    display: block;
+  }
+}
+
 .nav {
   font-size: 14px;
 }
 
 .nav__list {
   display: flex;
-  gap: 40px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
   align-items: center;
+}
+@media (max-width: 1220px) {
+  .nav__list {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
 }
 
 .nav__link {

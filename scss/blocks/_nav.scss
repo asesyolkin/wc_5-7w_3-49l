@@ -4,8 +4,12 @@
 
 .nav__list {
   display: flex;
-  gap: 40px;
+  column-gap: 40px;
   align-items: center;
+
+  @include tablet {
+    column-gap: 20px;
+  }
 }
 
 .nav__item {
