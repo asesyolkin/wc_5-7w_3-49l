@@ -2,6 +2,8 @@
 }
 
 .promo__wrapper {
+  $gradient: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,9 +13,7 @@
   border-radius: 40px;
 
   background-color: #000; // временный фон для момента загрузки картинки
-  background-image: 
-    linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
-    url('./../img/promo/promo-bg.jpg'); // важен порядок значений - сначала градиент, потом картинка
+  background-image: $gradient, url('./../img/promo/promo-bg.jpg'); // важен порядок значений - сначала градиент, потом картинка
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -21,19 +21,29 @@
   color: #fff;
   text-align: center;
 
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: 
-      linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
-      url('./../img/promo/promo-bg@2x.jpg');
+  @include mediaBG {
+    background-image: $gradient, url('./../img/promo/promo-bg@2x.jpg');
   }
 
   @include tablet {
     height: 434px;
+
+    background-image: $gradient, url('./../img/promo/promo-bg-tablet.jpg');
+
+    @include mediaBG {
+      background-image: $gradient, url('./../img/promo/promo-bg-tablet@2x.jpg');
+    }
   }
 
   @include mobile{
     height: auto; // можно тоже оставить фикс размер, но решили в учебных целях добавить альтернативный вариант
     padding: 60px 15px;
+
+    background-image: $gradient, url('./../img/promo/promo-bg-mobile.jpg');
+
+    @include mediaBG {
+      background-image: $gradient, url('./../img/promo/promo-bg-mobile@2x.jpg');
+    }
   }
 }
 
