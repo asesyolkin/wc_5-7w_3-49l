@@ -39,6 +39,8 @@
     height: auto; // можно тоже оставить фикс размер, но решили в учебных целях добавить альтернативный вариант
     padding: 60px 15px;
 
+    border-radius: 20px;
+
     background-image: $gradient, url('./../img/promo/promo-bg-mobile.jpg');
 
     @include mediaBG {

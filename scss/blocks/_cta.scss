@@ -38,6 +38,8 @@
     height: auto;
     padding: 40px 15px;
 
+    border-radius: 20px;
+
     background-image: $gradient, url('./../img/cta/cta-bg-mobile.jpg');
 
     @include mediaBG {
