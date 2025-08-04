@@ -932,25 +932,54 @@ a.btn-outline:hover {
 
 .faq__wrapper {
   display: flex;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
   justify-content: space-between;
+  gap: 40px 30px;
+}
+@media (max-width: 1220px) {
+  .faq__wrapper {
+    flex-direction: column;
+  }
+}
+@media (max-width: 788px) {
+  .faq__wrapper {
+    row-gap: 20px;
+  }
 }
 
 .faq__title {
   width: 470px;
   flex-shrink: 0;
 }
+@media (max-width: 1220px) {
+  .faq__title {
+    width: auto;
+  }
+}
 
 .faq__topics {
   width: 670px;
   flex-shrink: 0;
+}
+@media (max-width: 1220px) {
+  .faq__topics {
+    width: auto;
+  }
 }
 
 .topic {
   padding: 30px 0;
   border-top: 1px solid #ECECF1;
   border-bottom: 1px solid #ECECF1;
+}
+@media (max-width: 1220px) {
+  .topic {
+    padding: 17px 0;
+  }
+}
+@media (max-width: 788px) {
+  .topic {
+    padding: 15px 0;
+  }
 }
 
 .topic + .topic {
@@ -966,11 +995,23 @@ a.btn-outline:hover {
        column-gap: 30px;
 }
 
+@media (max-width: 788px) {
+  .topic__icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
 .topic__title {
   font-size: 22px;
   font-weight: 700;
   line-height: 1;
   color: #000;
+}
+@media (max-width: 788px) {
+  .topic__title {
+    font-size: 18px;
+  }
 }
 
 .topic__content {
@@ -979,6 +1020,12 @@ a.btn-outline:hover {
   flex-direction: column;
   row-gap: 1em;
   line-height: 1.5;
+}
+@media (max-width: 788px) {
+  .topic__content {
+    padding-top: 13px;
+    font-size: 14px;
+  }
 }
 
 .topic__content--open {
