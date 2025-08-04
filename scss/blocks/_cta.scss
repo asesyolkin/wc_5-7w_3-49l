@@ -2,6 +2,8 @@
 }
 
 .cta__wrapper {
+  $gradient: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+
   height: 400px;
   padding: 30px;
   
@@ -11,19 +13,36 @@
 
   background-color: #000; // временный фон для момента загрузки картинки
   border-radius: 40px;
-  background-image: 
-    linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
-    url('./../img/cta/cta-bg.jpg'); // важен порядок значений - сначала градиент, потом картинка
+  background-image: $gradient, url('./../img/cta/cta-bg.jpg'); // важен порядок значений - сначала градиент, потом картинка
   background-repeat: no-repeat;
   background-size: cover;
 
   color: #fff;
   text-align: center;
 
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: 
-      linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
-      url('./../img/cta/cta-bg@2x.jpg');
+  @include mediaBG {
+    background-image: $gradient, url('./../img/cta/cta-bg@2x.jpg');
+  }
+
+  @include tablet {
+    height: 326px;
+
+    background-image: $gradient, url('./../img/cta/cta-bg-tablet.jpg');
+
+    @include mediaBG {
+      background-image: $gradient, url('./../img/cta/cta-bg-tablet@2x.jpg');
+    }
+  }
+
+  @include mobile{
+    height: auto;
+    padding: 40px 15px;
+
+    background-image: $gradient, url('./../img/cta/cta-bg-mobile.jpg');
+
+    @include mediaBG {
+      background-image: $gradient, url('./../img/cta/cta-bg-mobile@2x.jpg');
+    }
   }
 }
 
@@ -41,6 +60,14 @@
   font-size: 42px;
   line-height: 1;
   color: #fff;
+
+  @include tablet {
+    font-size: 32px;
+  }
+
+  @include mobile{
+    font-size: 24px;
+  }
 }
 
 .cta__text {
@@ -50,12 +77,22 @@
 
   font-weight: 300;
   font-size: 18px;
-  line-height: 1;
+  line-height: 1.5;
   color: #fff;
+
+  @include tablet {
+    font-size: 16px;
+  }
+
+  @include mobile{
+    font-size: 14px;
+  }
 }
 
 .cta__btns {
   display: flex;
-  column-gap: 20px;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
