@@ -10,8 +10,31 @@
 
   border-radius: 40px;
 
+  background-color: #000; // временный фон для момента загрузки картинки
+  background-image: 
+    linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
+    url('./../img/promo/promo-bg.jpg'); // важен порядок значений - сначала градиент, потом картинка
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
   color: #fff;
   text-align: center;
+
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: 
+      linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
+      url('./../img/promo/promo-bg@2x.jpg');
+  }
+
+  @include tablet {
+    height: 434px;
+  }
+
+  @include mobile{
+    height: auto; // можно тоже оставить фикс размер, но решили в учебных целях добавить альтернативный вариант
+    padding: 60px 15px;
+  }
 }
 
 .promo__content {
@@ -20,21 +43,14 @@
   align-items: center;
   row-gap: 40px;
   max-width: 678px;
-}
 
-.promo__wrapper,
-.promo__content {
-  background-color: #000; // временный фон для момента загрузки картинки
-  background-image: 
-    linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
-    url('./../img/promo/promo-bg.jpg'); // важен порядок значений - сначала градиент, потом картинка
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include tablet {
+    row-gap: 30px;
+  }
 
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: 
-      linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
-      url('./../img/promo/promo-bg@2x.jpg');
+  @include mobile{
+    row-gap: 20px;
+    max-width: 330px;
   }
 }
 
@@ -42,6 +58,14 @@
   font-size: 72px;
   font-weight: 800;
   line-height: 1;
+
+  @include tablet {
+    font-size: 52px;
+  }
+
+  @include mobile{
+    font-size: 32px;
+  }
 }
 
 .promo__text {
@@ -51,10 +75,16 @@
   display: flex;
   flex-direction: column;
   row-gap: 0.5em;
+
+  @include tablet {
+    font-size: 16px;
+  }
 }
 
 .promo__btns {
   display: flex;
-  column-gap: 20px;
+  justify-content: center;
+  gap: 20px;
   align-items: center;
+  flex-wrap: wrap;
 }

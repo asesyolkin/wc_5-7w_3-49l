@@ -124,10 +124,6 @@ button:focus {
   padding: 0 15px;
   margin: 0 auto;
 }
-.container--large {
-  max-width: 1510px;
-  width: 100%;
-}
 @media (max-width: 1220px) {
   .container {
     width: 768px;
@@ -136,6 +132,15 @@ button:focus {
 @media (max-width: 788px) {
   .container {
     width: 360px;
+  }
+}
+.container--large {
+  max-width: 1510px;
+  width: 100%;
+}
+@media (max-width: 1220px) {
+  .container--large {
+    width: 100%;
   }
 }
 @media (max-width: 788px) {
@@ -327,8 +332,29 @@ a.btn-outline:hover {
   height: 600px;
   padding: 30px;
   border-radius: 40px;
+  background-color: #000;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("./../img/promo/promo-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   color: #fff;
   text-align: center;
+}
+@media (min-resolution: 192dpi) {
+  .promo__wrapper {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("./../img/promo/promo-bg@2x.jpg");
+  }
+}
+@media (max-width: 1220px) {
+  .promo__wrapper {
+    height: 434px;
+  }
+}
+@media (max-width: 788px) {
+  .promo__wrapper {
+    height: auto;
+    padding: 60px 15px;
+  }
 }
 
 .promo__content {
@@ -338,18 +364,15 @@ a.btn-outline:hover {
   row-gap: 40px;
   max-width: 678px;
 }
-
-.promo__wrapper,
-.promo__content {
-  background-color: #000;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("./../img/promo/promo-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-@media (min-resolution: 192dpi) {
-  .promo__wrapper,
+@media (max-width: 1220px) {
   .promo__content {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url("./../img/promo/promo-bg@2x.jpg");
+    row-gap: 30px;
+  }
+}
+@media (max-width: 788px) {
+  .promo__content {
+    row-gap: 20px;
+    max-width: 330px;
   }
 }
 
@@ -357,6 +380,16 @@ a.btn-outline:hover {
   font-size: 72px;
   font-weight: 800;
   line-height: 1;
+}
+@media (max-width: 1220px) {
+  .promo__title {
+    font-size: 52px;
+  }
+}
+@media (max-width: 788px) {
+  .promo__title {
+    font-size: 32px;
+  }
 }
 
 .promo__text {
@@ -366,12 +399,18 @@ a.btn-outline:hover {
   flex-direction: column;
   row-gap: 0.5em;
 }
+@media (max-width: 1220px) {
+  .promo__text {
+    font-size: 16px;
+  }
+}
 
 .promo__btns {
   display: flex;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  justify-content: center;
+  gap: 20px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .benefits__row {
