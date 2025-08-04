@@ -22,43 +22,6 @@ button:focus {
   outline: #005fcc auto 1px;
 }
 
-.container {
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-
-  @include tablet {
-    width: 768px; // 738 под контент, 30 под падинги по бокам
-  }
-
-  @include mobile {
-    width: 360px; // 330 под контент, 30 под падинги по бокам
-  }
-
-  &--large {
-    max-width: 1510px;
-    width: 100%;
-
-    @include tablet {
-      width: 100%;
-    }
-  }
-
-  &--mobile-fluid {
-    @include mobile{
-      width: auto;
-    }
-  }
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  row-gap: 120px;
-
-  margin-bottom: 120px;
-}
-
 .title-section {
   font-size: 42px;
   font-weight: 800;

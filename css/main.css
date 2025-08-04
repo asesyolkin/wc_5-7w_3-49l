@@ -119,6 +119,23 @@ button:focus {
   outline: #005fcc auto 1px;
 }
 
+.title-section {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #000;
+}
+
+.none {
+  display: none !important;
+}
+
+@media (max-width: 1220px) {
+  .visible-desktop {
+    display: none;
+  }
+}
+
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -155,21 +172,14 @@ button:focus {
   row-gap: 120px;
   margin-bottom: 120px;
 }
-
-.title-section {
-  font-size: 42px;
-  font-weight: 800;
-  line-height: 1.2;
-  color: #000;
-}
-
-.none {
-  display: none !important;
-}
-
 @media (max-width: 1220px) {
-  .visible-desktop {
-    display: none;
+  .main {
+    row-gap: 80px;
+  }
+}
+@media (max-width: 788px) {
+  .main {
+    row-gap: 60px;
   }
 }
 
@@ -435,6 +445,11 @@ a.btn-outline:hover {
   flex: 1;
   text-align: center;
 }
+@media (max-width: 788px) {
+  .benefits__img {
+    display: none;
+  }
+}
 
 .benefits__desc {
   flex: 1;
@@ -446,6 +461,16 @@ a.btn-outline:hover {
   font-weight: 800;
   line-height: 1.2;
 }
+@media (max-width: 1220px) {
+  .benefits__title {
+    font-size: 26px;
+  }
+}
+@media (max-width: 788px) {
+  .benefits__title {
+    font-size: 24px;
+  }
+}
 
 .benefits_text {
   display: flex;
@@ -456,12 +481,22 @@ a.btn-outline:hover {
   line-height: 1.5;
   color: #2F2F2F;
 }
+@media (max-width: 1220px) {
+  .benefits_text {
+    margin-bottom: 20px;
+  }
+}
 
 .benefints__list {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
   width: 500px;
+}
+@media (max-width: 1220px) {
+  .benefints__list {
+    width: auto;
+  }
 }
 
 .benefit {
@@ -470,9 +505,27 @@ a.btn-outline:hover {
        column-gap: 30px;
   align-items: flex-start;
 }
+@media (max-width: 1220px) {
+  .benefit {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+@media (max-width: 788px) {
+  .benefit {
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+  }
+}
 
 .benefit__img {
   flex-shrink: 0;
+}
+@media (max-width: 1220px) {
+  .benefit__img {
+    width: 42px;
+    height: 42px;
+  }
 }
 
 .benefit__desc {
@@ -489,6 +542,11 @@ a.btn-outline:hover {
   font-weight: 800;
   line-height: 1;
   color: #000;
+}
+@media (max-width: 1220px) {
+  .benefit__title {
+    font-size: 18px;
+  }
 }
 
 .locations__row {

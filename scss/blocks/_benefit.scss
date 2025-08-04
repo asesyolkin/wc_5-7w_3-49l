@@ -2,10 +2,23 @@
   display: flex;
   column-gap: 30px;
   align-items: flex-start;
+
+  @include tablet {
+    column-gap: 20px;
+  }
+
+  @include mobile{
+    column-gap: 15px;
+  }
 }
 
 .benefit__img {
   flex-shrink: 0;
+
+  @include tablet {
+    width: 42px;
+    height: 42px;
+  }
 }
 
 .benefit__desc {
@@ -23,4 +36,8 @@
   font-weight: 800;
   line-height: 1;
   color: #000;
+
+  @include tablet {
+    font-size: 18px;
+  }
 }
