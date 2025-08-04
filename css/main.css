@@ -185,16 +185,23 @@ button:focus {
 @media (max-width: 1220px) {
   .main {
     row-gap: 80px;
+    margin-bottom: 80px;
   }
 }
 @media (max-width: 788px) {
   .main {
     row-gap: 60px;
+    margin-bottom: 60px;
   }
 }
 
 .header {
   padding: 40px 0;
+}
+@media (max-width: 788px) {
+  .header {
+    padding: 20px 0;
+  }
 }
 
 .header__row {
@@ -207,6 +214,14 @@ button:focus {
 
 .header__logo {
   flex-shrink: 0;
+}
+@media (max-width: 788px) {
+  .header__logo {
+    height: 16px;
+  }
+}
+.header__logo img {
+  height: 100%;
 }
 
 @media (max-width: 788px) {
@@ -600,7 +615,7 @@ a.btn-outline:hover {
 }
 @media (max-width: 788px) {
   .locations__controls--mobile {
-    display: block;
+    display: flex;
   }
 }
 
