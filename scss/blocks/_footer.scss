@@ -5,6 +5,10 @@
 
   color: #fff;
   
+  @include mobile{
+    padding: 40px 0;
+  }
+  
   a {
     color: #fff;
   }

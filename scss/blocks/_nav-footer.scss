@@ -4,9 +4,11 @@
   align-items: center;
 
   font-size: 14px;
-}
 
-.nav-footer__item {
+  @include mobile{
+    flex-direction: column;
+    row-gap: 15px;
+  }
 }
 
 a.nav-footer__link {

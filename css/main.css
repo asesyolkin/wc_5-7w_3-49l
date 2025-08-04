@@ -1037,6 +1037,11 @@ a.btn-outline:hover {
   background-color: #000;
   color: #fff;
 }
+@media (max-width: 788px) {
+  .footer {
+    padding: 40px 0;
+  }
+}
 .footer a {
   color: #fff;
 }
@@ -1059,6 +1064,12 @@ a.btn-outline:hover {
   align-items: center;
   font-size: 14px;
 }
+@media (max-width: 788px) {
+  .nav-footer {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+}
 
 a.nav-footer__link {
   transition: color 0.2s ease-in;
@@ -1073,4 +1084,10 @@ a.nav-footer__link:hover {
   -moz-column-gap: 40px;
        column-gap: 40px;
   align-items: center;
+}
+@media (max-width: 788px) {
+  .social-list {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */

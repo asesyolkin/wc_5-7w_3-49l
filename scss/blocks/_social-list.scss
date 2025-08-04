@@ -2,9 +2,8 @@
   display: flex;
   column-gap: 40px;
   align-items: center;
-}
-
-.social-list__item {
-}
-.social-list__link {
+  
+  @include mobile{
+    column-gap: 20px;
+  }
 }
