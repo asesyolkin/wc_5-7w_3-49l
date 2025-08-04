@@ -6,6 +6,10 @@
 
 .service__icon {
   margin-bottom: 20px;
+
+  @include mobile{
+    margin-bottom: 10px;
+  }
 }
 
 .service__title {
@@ -15,4 +19,10 @@
   font-weight: 800;
   line-height: 1;
   color: #000;
+
+  @include tablet {
+    margin-bottom: 10px;
+
+    font-size: 18px;
+  }
 }
