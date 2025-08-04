@@ -131,33 +131,47 @@
     </section>
 
     <!-- LOCATIONS -->
-    <section class="locations none">
-      <div class="container">
-
-        <div class="locations__row">
-          <!-- TITLE -->
-          <div class="locations__title"> <!-- добавили для того, чтобы не добавлять <br> в текст -->
-            <h2 class="title-section">Локации и рабочие пространства</h2>
-          </div>
-
-          <!-- CONTROL -->
-          <div class="locations__controls">
-            <button>
-              <img src="./img/icons/arrow-left.svg" alt="Prev">
-            </button>
-            <button>
-              <img src="./img/icons/arrow-right.svg" alt="Next">
-            </button>
+    <section class="locations">
+        <!-- TITLE & CONTROL -->
+        <div class="container">
+          <div class="locations__row">
+            <!-- TITLE -->
+            <div class="locations__title"> <!-- добавили для того, чтобы не добавлять <br> в текст -->
+              <h2 class="title-section">Локации и рабочие пространства</h2>
+            </div>
+  
+            <!-- CONTROL -->
+            <div class="locations__controls">
+              <button>
+                <img class="locations__controls-img" src="./img/icons/arrow-left.svg" alt="Prev">
+              </button>
+              <button>
+                <img class="locations__controls-img" src="./img/icons/arrow-right.svg" alt="Next">
+              </button>
+            </div>
           </div>
         </div>
 
         <!-- SLIDER -->
-        <div class="slider">
-          <img src="./img/slider/slide-01.jpg" srcset="./img/slider/slide-01@2x.jpg 2x" alt="Slide" class="slider__img">
-          <img src="./img/slider/slide-02.jpg" srcset="./img/slider/slide-02@2x.jpg 2x" alt="Slide" class="slider__img">
-          <img src="./img/slider/slide-03.jpg" srcset="./img/slider/slide-03@2x.jpg 2x" alt="Slide" class="slider__img">
+        <div class="container container--mobile-fluid">
+          <div class="slider">
+            <img src="./img/slider/slide-01.jpg" srcset="./img/slider/slide-01@2x.jpg 2x" alt="Slide" class="slider__img">
+            <img src="./img/slider/slide-02.jpg" srcset="./img/slider/slide-02@2x.jpg 2x" alt="Slide" class="slider__img">
+            <img src="./img/slider/slide-03.jpg" srcset="./img/slider/slide-03@2x.jpg 2x" alt="Slide" class="slider__img">
+          </div>
         </div>
-      </div>
+
+        <!-- CONTROL mobile -->
+        <div class="container">
+          <div class="locations__controls locations__controls--mobile">
+            <button>
+              <img class="locations__controls-img" src="./img/icons/arrow-left.svg" alt="Prev">
+            </button>
+            <button>
+              <img class="locations__controls-img" src="./img/icons/arrow-right.svg" alt="Next">
+            </button>
+          </div>
+        </div>
     </section>
 
     <!-- SERVICES -->

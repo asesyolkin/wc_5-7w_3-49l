@@ -27,6 +27,14 @@ button:focus {
   font-weight: 800;
   line-height: 1.2;
   color: #000;
+
+  @include tablet {
+    font-size: 32px;
+  }
+
+  @include mobile{
+    font-size: 24px;
+  }
 }
 
 .none {

@@ -6,4 +6,8 @@
 
 .slider__img {
   border-radius: 8px;
+
+  @include mobile{
+    height: 250px;
+  }
 }
