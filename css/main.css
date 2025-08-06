@@ -175,6 +175,13 @@ button:focus {
     width: auto;
   }
 }
+@media (max-width: 788px) {
+  .container--mobile-fix {
+    width: 360px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+}
 
 .main {
   display: flex;

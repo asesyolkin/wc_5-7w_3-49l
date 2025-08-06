@@ -21,8 +21,16 @@
   }
 
   &--mobile-fluid {
-    @include mobile{
+    @include mobile {
       width: auto;
+    }
+  }
+
+  &--mobile-fix {
+    @include mobile{
+      width: 360px;
+      padding: 0 15px;
+      margin: 0 auto;
     }
   }
 }
