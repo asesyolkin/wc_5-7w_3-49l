@@ -582,6 +582,20 @@ a.btn-outline:hover {
   }
 }
 
+.locations {
+  scroll-margin-top: 60px;
+}
+@media (max-width: 1220px) {
+  .locations {
+    scroll-margin-top: 40px;
+  }
+}
+@media (max-width: 788px) {
+  .locations {
+    scroll-margin-top: 30px;
+  }
+}
+
 .locations__row {
   margin-bottom: 40px;
   display: flex;
@@ -646,6 +660,20 @@ a.btn-outline:hover {
 @media (max-width: 788px) {
   .slider__img {
     height: 250px;
+  }
+}
+
+.services {
+  scroll-margin-top: 60px;
+}
+@media (max-width: 1220px) {
+  .services {
+    scroll-margin-top: 40px;
+  }
+}
+@media (max-width: 788px) {
+  .services {
+    scroll-margin-top: 30px;
   }
 }
 
@@ -918,6 +946,20 @@ a.btn-outline:hover {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+.map {
+  scroll-margin-top: 60px;
+}
+@media (max-width: 1220px) {
+  .map {
+    scroll-margin-top: 40px;
+  }
+}
+@media (max-width: 788px) {
+  .map {
+    scroll-margin-top: 30px;
+  }
 }
 
 .map__title {

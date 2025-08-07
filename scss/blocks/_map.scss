@@ -1,4 +1,5 @@
 .map {
+  @include scrollTopMargin;
 }
 
 .map__title {

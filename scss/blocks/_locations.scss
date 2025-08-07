@@ -1,4 +1,5 @@
 .locations {
+  @include scrollTopMargin;
 }
 
 .locations__row {
