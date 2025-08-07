@@ -1,0 +1,40 @@
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: none;
+  flex-direction: column;
+
+  background-color: #fff;
+
+  &--open {
+    display: flex;
+  }
+}
+
+.mobile-nav__header {
+  padding: 20px 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-nav__logo {
+}
+
+.mobile-nav__btn {
+}
+
+.mobile-nav__body {
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #F6F6F6;
+}
