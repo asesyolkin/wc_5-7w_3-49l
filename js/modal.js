@@ -7,6 +7,9 @@ openModalBtns.forEach(elem => {
   elem.addEventListener('click', () => {
     modal.classList.add('modal--open');
 
+    // добавляем отступ справа для компенсации отсутствия скролла, чтобы весь сайт 
+    // не смещался вправо во время открытия модального окна
+    document.body.style.paddingRight = window.innerWidth - document.body.clientWidth + 'px';
     document.body.classList.add('no-scroll');
   });
 });
@@ -14,7 +17,13 @@ openModalBtns.forEach(elem => {
 modal.addEventListener('click', e => {
   if (e.target === closeModalBtn || e.target === modal) {
     modal.classList.remove('modal--open');
-
-    document.body.classList.remove('no-scroll');
+    
+    // убираем добавленный отступ справа и возвращаем скролл только после окончания 
+    // анимации закрытия модального окна
+    window.ontransitionend = () => {
+      document.body.style.paddingRight = '';
+      document.body.classList.remove('no-scroll');
+      window.ontransitionend = null;
+    }
   }
 });
