@@ -10,9 +10,18 @@
   align-items: center;
 
   background-color:rgba(0, 0, 0, 0.8);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease-in;
+  
+  &--open {
+    opacity: 1;
+    pointer-events: all;
+  }
 }
 
-.modal-body {
+.modal__body {
   width: 420px;
   padding: 40px;
 
@@ -23,10 +32,17 @@
 
   color: #2f2f2f;
 
+  transform: translate(0, -50%);
+  transition: all 0.2s ease-in;
+
   @include mobile{
     width: 360px;
     padding: 20px;
   }
+}
+
+.modal--open .modal__body {
+  transform: translate(0, 0%);
 }
 
 .modal__close {

@@ -1253,21 +1253,34 @@ a.nav-footer__link:hover {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease-in;
+}
+.modal--open {
+  opacity: 1;
+  pointer-events: all;
 }
 
-.modal-body {
+.modal__body {
   width: 420px;
   padding: 40px;
   position: relative;
   border-radius: 20px;
   background-color: #fff;
   color: #2f2f2f;
+  transform: translate(0, -50%);
+  transition: all 0.2s ease-in;
 }
 @media (max-width: 788px) {
-  .modal-body {
+  .modal__body {
     width: 360px;
     padding: 20px;
   }
+}
+
+.modal--open .modal__body {
+  transform: translate(0, 0%);
 }
 
 .modal__close {
