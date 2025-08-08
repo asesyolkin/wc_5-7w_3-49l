@@ -39,7 +39,7 @@
               <a href="#map" class="nav__link">Расположение</a>
             </li>
             <li class="nav__item visible-desktop">
-              <button class="btn-dark">Оставить заявку</button>
+              <button class="btn-dark" data-action="modal">Оставить заявку</button>
             </li>
           </ul>
         </nav>
@@ -106,7 +106,7 @@
 
             <!-- BUTTONS -->
             <div class="promo__btns">
-              <button class="btn-green">Оставить заявку</button>
+              <button class="btn-green" data-action="modal">Оставить заявку</button>
               <a href="#!" class="btn-outline">Исследовать</a>
             </div>
           </div>
@@ -289,7 +289,7 @@
                 <li class="card__list-item">Без специальной скидки</li>
               </ul>
               <div class="card__btn">
-                <button class="btn-price">Оставить заявку</button>
+                <button class="btn-price" data-action="modal">Оставить заявку</button>
               </div>
             </div>
           </article>
@@ -309,7 +309,7 @@
                 <li class="card__list-item">скидка 30% на аренду переговорных</li>
               </ul>
               <div class="card__btn">
-                <button class="btn-price">Оставить заявку</button>
+                <button class="btn-price" data-action="modal">Оставить заявку</button>
               </div>
             </div>
           </article>
@@ -329,7 +329,7 @@
                 <li class="card__list-item">скидка 30% на аренду переговорных</li>
               </ul>
               <div class="card__btn">
-                <button class="btn-price">Оставить заявку</button>
+                <button class="btn-price" data-action="modal">Оставить заявку</button>
               </div>
             </div>
           </article>
@@ -359,7 +359,7 @@
                 <img src="./img/icons/WhatsApp.svg" alt="WhatsApp">  
                 WhatsApp
               </a>
-              <button class="btn-outline">Оставить заявку</button>
+              <button class="btn-outline" data-action="modal">Оставить заявку</button>
             </div>
           </div>
         </div>
@@ -506,7 +506,7 @@
     <div class="modal__body">
 
       <!-- BUTTON CLOSE -->
-      <button class="modal__close" type="button">
+      <button class="modal__close" type="button" id="closeModal">
         <img src="./img/icons/modal-close.svg" alt="Close">
       </button>
 
@@ -539,6 +539,7 @@
   <!-- SCRIPTS -->
   <script src="./js/scrollToTop.js"></script>
   <script src="./js/mobile-nav.js"></script>
+  <script src="./js/modal.js"></script>
 
 </body>
 </html>
