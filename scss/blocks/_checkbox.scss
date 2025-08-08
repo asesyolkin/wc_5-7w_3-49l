@@ -1,0 +1,29 @@
+.fake-checkbox {
+  $tran-delay-time-func: 0.1s ease-in;
+
+  width: 20px;
+  height: 20px;
+
+  position: relative;
+
+  border: 1px solid #999;
+  border-radius: 4px;
+
+  background-color: #fff;
+  background-image: url('./../img/icons/tick.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0%;
+
+  transition: 
+    border-color $tran-delay-time-func,
+    background-size $tran-delay-time-func,
+    background-color $tran-delay-time-func;
+}
+
+.real-checkbox:checked + .fake-checkbox {
+  border: 1px solid #000;
+
+  background-color: #000;
+  background-size: 70%;
+}

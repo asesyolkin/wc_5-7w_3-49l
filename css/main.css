@@ -297,11 +297,16 @@ a.btn-dark {
   font-size: 16px;
   font-weight: 700;
   color: #fff;
+  text-align: center;
   transition: background-color 0.2s ease-in;
 }
 .btn-dark:hover,
 a.btn-dark:hover {
   background-color: #333;
+}
+.btn-dark--wide,
+a.btn-dark--wide {
+  width: 100%;
 }
 
 .btn-green,
@@ -1253,6 +1258,97 @@ a.nav-footer__link:hover {
 .modal-body {
   width: 420px;
   padding: 40px;
+  position: relative;
   border-radius: 20px;
   background-color: #fff;
+  color: #2f2f2f;
+}
+@media (max-width: 788px) {
+  .modal-body {
+    width: 360px;
+    padding: 20px;
+  }
+}
+
+.modal__close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+@media (max-width: 788px) {
+  .modal__close {
+    top: 10px;
+    right: 10px;
+  }
+}
+
+.modal__header {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.modal__title {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #000;
+}
+@media (max-width: 788px) {
+  .modal__title {
+    font-size: 28px;
+  }
+}
+
+.modal__text {
+  line-height: 1.5;
+}
+
+.modal__inputs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.modal__checkbox-label {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.input {
+  height: 60px;
+  padding: 20px 30px;
+  border: 1px solid #b3b3b3;
+  border-radius: 80px;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.fake-checkbox {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background-color: #fff;
+  background-image: url("./../img/icons/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 0%;
+  transition: border-color 0.1s ease-in, background-size 0.1s ease-in, background-color 0.1s ease-in;
+}
+
+.real-checkbox:checked + .fake-checkbox {
+  border: 1px solid #000;
+  background-color: #000;
+  background-size: 70%;
 }/*# sourceMappingURL=main.css.map */
