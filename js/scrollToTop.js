@@ -7,3 +7,11 @@ window.addEventListener('scroll', e => {
     scrollBtn.classList.remove('top-link--visible');
   }
 })
+
+function showScrollBtn() {
+  scrollBtn.style.display = 'flex';
+}
+
+function hideScrollBtn() {
+  scrollBtn.style.display = 'none';
+}
