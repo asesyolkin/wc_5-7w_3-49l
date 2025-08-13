@@ -3,6 +3,7 @@ const openModalBtns = document.querySelectorAll('[ data-action="modal"]'),
       closeModalBtn = document.querySelector('#closeModal img'),
       modalBody = document.querySelector('.modal__body');
 
+// Обаботчики открытия модального окна по клику
 openModalBtns.forEach(elem => {
   elem.addEventListener('click', () => {
     modal.classList.add('modal--open');
@@ -18,20 +19,32 @@ openModalBtns.forEach(elem => {
   });
 });
 
+// Обаботчик закрытия модального окна по клику
 modal.addEventListener('click', e => {
   if (e.target === closeModalBtn || e.target === modal) {
-    modal.classList.remove('modal--open');
-    
-    window.ontransitionend = () => {
-      // убираем добавленный отступ справа и возвращаем браузерный скролл только 
-      // после окончания анимации закрытия модального окна
-      document.body.style.paddingRight = '';
-      document.body.classList.remove('no-scroll');
-
-      // показываем кнопку прокрутки наверх
-      showScrollBtn();
-
-      window.ontransitionend = null;
-    }
+    closeModal();
   }
 });
+
+// Обаботчик закрытия модального окна через клавишу Escape
+document.addEventListener('keydown', e => {
+  if (e.code === 'Escape') {
+    closeModal();
+  }
+});
+
+function closeModal () {
+  modal.classList.remove('modal--open');
+  
+  window.ontransitionend = () => {
+    // убираем добавленный отступ справа и возвращаем браузерный скролл только 
+    // после окончания анимации закрытия модального окна
+    document.body.style.paddingRight = '';
+    document.body.classList.remove('no-scroll');
+
+    // показываем кнопку прокрутки наверх
+    showScrollBtn();
+
+    window.ontransitionend = null;
+  }
+};
