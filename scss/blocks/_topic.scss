@@ -43,21 +43,25 @@
 }
 
 .topic__content {
-  padding-top: 30px;
+  max-height: 0px;
   
-  display: none;
+  display: flex;
   flex-direction: column;
   row-gap: 1em;
 
+  overflow: hidden;
+
   line-height: 1.5;
+
+  transition: max-height 0.4s ease-in;
 
   @include mobile{
     padding-top: 13px;
 
     font-size: 14px;
   }
-}
 
-.topic--open .topic__content {
-  display: flex;
+  & > *:first-child {
+    padding-top: 30px;
+  }
 }

@@ -1101,11 +1101,13 @@ a.btn-outline:hover {
 }
 
 .topic__content {
-  padding-top: 30px;
-  display: none;
+  max-height: 0px;
+  display: flex;
   flex-direction: column;
   row-gap: 1em;
+  overflow: hidden;
   line-height: 1.5;
+  transition: max-height 0.4s ease-in;
 }
 @media (max-width: 788px) {
   .topic__content {
@@ -1113,9 +1115,8 @@ a.btn-outline:hover {
     font-size: 14px;
   }
 }
-
-.topic--open .topic__content {
-  display: flex;
+.topic__content > *:first-child {
+  padding-top: 30px;
 }
 
 .footer {
