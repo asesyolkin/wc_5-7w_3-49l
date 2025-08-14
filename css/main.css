@@ -199,6 +199,11 @@ button:focus {
     margin: 0 auto;
   }
 }
+@media (max-width: 788px) {
+  .container--mobile-no-padding {
+    padding: 0px;
+  }
+}
 
 .main {
   display: flex;
@@ -677,6 +682,11 @@ a.btn-outline:hover {
 }
 .slider img {
   max-width: unset;
+}
+@media (max-width: 788px) {
+  .slider > div:first-child {
+    padding-left: 15px;
+  }
 }
 
 .slider__img {

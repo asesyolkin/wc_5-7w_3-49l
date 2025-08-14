@@ -6,6 +6,12 @@
   & img {
     max-width: unset;
   }
+
+  & > div:first-child {
+    @include mobile{
+      padding-left: 15px;
+    }
+  }
 }
 
 .slider__img {

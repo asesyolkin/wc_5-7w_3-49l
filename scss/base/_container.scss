@@ -33,4 +33,10 @@
       margin: 0 auto;
     }
   }
+
+  &--mobile-no-padding {
+    @include mobile{
+      padding: 0px;
+    }
+  }
 }
