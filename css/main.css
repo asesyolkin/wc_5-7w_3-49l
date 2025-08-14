@@ -675,6 +675,9 @@ a.btn-outline:hover {
        column-gap: 10px;
   overflow: hidden;
 }
+.slider img {
+  max-width: unset;
+}
 
 .slider__img {
   border-radius: 8px;
