@@ -1,23 +1,19 @@
 .slider {
-  display: flex;
-  column-gap: 10px;
-  overflow: hidden;
+  img {
+    border-radius: 8px;
+    object-fit: cover;
 
-  & img {
-    max-width: unset;
+    max-width: unset !important;
+    height: 400px !important;
+
+    @include mobile {
+      height: 250px !important;
+    }
   }
 
   & > div:first-child {
     @include mobile{
       padding-left: 15px;
     }
-  }
-}
-
-.slider__img {
-  border-radius: 8px;
-
-  @include mobile{
-    height: 250px;
   }
 }

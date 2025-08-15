@@ -3,12 +3,17 @@
 // Инициализируем слайдер и настраиваем его
 const slider = tns({
   container: '.slider',
+
   items: 2.7,
   gutter: 10,
   mouseDrag: true,
   speed: 400,
-  loop: false,
+  // loop: false, // Ломает работу с lazyLoad
+
   autoWidth: true,
+  lazyload: true,
+  swipeAngle: false,
+
   controlsContainer: '.locations__controls',
   nav: false
 });
