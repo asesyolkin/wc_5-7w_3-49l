@@ -1101,6 +1101,16 @@ a.btn-outline:hover {
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
+.topic__btn:hover:not(:focus-visible) {
+  opacity: 0.5;
+}
+.topic__btn:focus {
+  outline: none;
+}
+.topic__btn:focus-visible {
+  outline-offset: 1px;
+  outline: #005fcc auto 1px;
+}
 
 @media (max-width: 788px) {
   .topic__icon {

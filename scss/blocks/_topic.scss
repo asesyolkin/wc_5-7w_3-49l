@@ -22,6 +22,19 @@
   justify-content: space-between;
   align-items: center;
   column-gap: 30px;
+
+  &:hover:not(:focus-visible) {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline-offset: 1px;
+    outline: #005fcc auto 1px;
+  }
 }
 
 .topic__icon {
