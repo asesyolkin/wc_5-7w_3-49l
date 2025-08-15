@@ -1028,11 +1028,11 @@ a.btn-outline:hover {
   }
 }
 
-.map__img {
+.map__iframe {
   border-radius: 40px;
 }
 @media (max-width: 788px) {
-  .map__img {
+  .map__iframe {
     border-radius: 20px;
   }
 }
