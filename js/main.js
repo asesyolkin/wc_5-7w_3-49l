@@ -1,5 +1,20 @@
 /* Tiny slider */
 
+const clientWidth = document.documentElement.clientWidth,
+      sliderImgs = document.querySelectorAll('.slider img');
+      sizeForDesctopImgs = [525, 300, 435, 300, 300, 300, 525, 525, 525],
+      sizeForMobileImgs = [330, 187, 272, 187, 187, 187, 330, 330, 330];
+
+if (clientWidth <= 788) {
+  sliderImgs.forEach((img, i) => {
+    img.setAttribute('width', sizeForMobileImgs[i]);
+  })
+} else {
+  sliderImgs.forEach((img, i) => {
+    img.setAttribute('width', sizeForDesctopImgs[i]);
+  })
+}
+
 // Инициализируем слайдер и настраиваем его
 const slider = tns({
   container: '.slider',
@@ -8,11 +23,12 @@ const slider = tns({
   gutter: 10,
   mouseDrag: true,
   speed: 400,
-  // loop: false, // Ломает работу с lazyLoad
+  loop: false, // Ломает работу с lazyLoad
 
   autoWidth: true,
   lazyload: true,
   swipeAngle: false,
+  preventScrollOnTouch: 'force', // непонятно, работает ли
 
   controlsContainer: '.locations__controls',
   nav: false
