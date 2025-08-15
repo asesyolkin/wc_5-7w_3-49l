@@ -1255,6 +1255,11 @@ a.nav-footer__link:hover {
   align-items: center;
 }
 
+.mobile-nav__logo,
+.mobile-nav__logo img {
+  height: 16px;
+}
+
 .mobile-nav__body {
   flex-grow: 1;
   display: flex;

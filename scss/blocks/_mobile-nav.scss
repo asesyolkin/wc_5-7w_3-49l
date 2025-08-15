@@ -29,7 +29,9 @@
   align-items: center;
 }
 
-.mobile-nav__logo {
+.mobile-nav__logo,
+.mobile-nav__logo img {
+  height: 16px;
 }
 
 .mobile-nav__btn {
