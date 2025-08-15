@@ -1,17 +1,17 @@
 /* Tiny slider */
 
 const clientWidth = document.documentElement.clientWidth,
-      sliderImgs = document.querySelectorAll('.slider img');
-      sizeForDesctopImgs = [525, 300, 435, 300, 300, 300, 525, 525, 525],
-      sizeForMobileImgs = [330, 187, 272, 187, 187, 187, 330, 330, 330];
+      sliderImgs = document.querySelectorAll('.slider img'),
+      sizesForDesktopImgs = [525, 300, 435, 300, 300, 300, 525, 525, 525],
+      sizesForMobileImgs = [330, 187, 272, 187, 187, 187, 330, 330, 330];
 
 if (clientWidth <= 788) {
   sliderImgs.forEach((img, i) => {
-    img.setAttribute('width', sizeForMobileImgs[i]);
+    img.setAttribute('width', sizesForMobileImgs[i]);
   })
 } else {
   sliderImgs.forEach((img, i) => {
-    img.setAttribute('width', sizeForDesctopImgs[i]);
+    img.setAttribute('width', sizesForDesktopImgs[i]);
   })
 }
 
@@ -23,12 +23,12 @@ const slider = tns({
   gutter: 10,
   mouseDrag: true,
   speed: 400,
-  loop: false, // Ломает работу с lazyLoad
+  loop: false,
 
   autoWidth: true,
   lazyload: true,
   swipeAngle: false,
-  preventScrollOnTouch: 'force', // непонятно, работает ли
+  preventScrollOnTouch: 'force', // force работает, попробовать auto
 
   controlsContainer: '.locations__controls',
   nav: false
